@@ -32,7 +32,7 @@ class FlowDistribution {
         if (astrologer.FlowStatus > 0) {
             this.astrologers[this.index].FlowStatus--;
         }
-        else if (astrologer.flowStatus < 0) {
+        else if (astrologer.FlowStatus < 0) {
             this.astrologers[this.index].FlowStatus++;
             this.index = (this.index + 1) % this.astrologers.length;
             astrologer = this.astrologers[this.index]
